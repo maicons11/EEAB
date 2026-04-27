@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -7,7 +6,7 @@
 
 <title>Escola Alonzo Barbuda</title>
 
-<!-- ÍCONES (IMPORTANTE) -->
+<!-- ÍCONES -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
 <style>
@@ -16,6 +15,12 @@ body {
   margin: 0;
   font-family: Arial, sans-serif;
   background: #f5f5f5;
+}
+
+/* LINKS (REMOVE AZUL E SUBLINHADO) */
+a {
+  text-decoration: none;
+  color: inherit;
 }
 
 /* TOPO */
@@ -41,11 +46,16 @@ body {
   width: 40px;
 }
 
+/* MENU */
 .menu a {
   color: white;
-  text-decoration: none;
   margin-left: 15px;
   font-weight: bold;
+  transition: 0.3s;
+}
+
+.menu a:hover {
+  color: #93c5fd;
 }
 
 /* CONTAINER */
@@ -56,19 +66,20 @@ body {
 }
 
 /* DESTAQUE */
+.destaque a {
+  color: black;
+}
+
 .destaque img {
   width: 100%;
   height: 300px;
   object-fit: cover;
   border-radius: 12px;
+  transition: 0.3s;
 }
 
-.destaque h2 {
-  margin: 10px 0 5px;
-}
-
-.destaque p {
-  color: #555;
+.destaque img:hover {
+  transform: scale(1.02);
 }
 
 /* GRID */
@@ -85,6 +96,11 @@ body {
   border-radius: 12px;
   padding: 10px;
   text-align: center;
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
 }
 
 .card img {
@@ -94,23 +110,30 @@ body {
   border-radius: 8px;
 }
 
-.card h3 {
-  font-size: 14px;
-}
-
 /* RODAPÉ */
 footer {
-  background: #222;
+  background: #111;
   color: white;
   text-align: center;
   padding: 20px;
 }
 
-/* ÍCONES */
-.redes i {
+/* REDES SOCIAIS */
+.redes a {
+  margin: 0 10px;
   font-size: 25px;
-  margin: 10px;
-  color: white;
+  transition: 0.3s;
+}
+
+/* CORES REAIS */
+.redes a.instagram { color: #E1306C; }
+.redes a.facebook { color: #1877F2; }
+.redes a.youtube { color: #FF0000; }
+
+/* HOVER */
+.redes a:hover {
+  transform: scale(1.2);
+  filter: brightness(1.2);
 }
 
 /* RESPONSIVO */
@@ -140,14 +163,14 @@ footer {
   <div class="container">
     
     <div class="logo">
-      <img src="img/imglogo.jpg">
+      <img src="img/logo.jpg">
       <span>Escola Alonzo Barbuda</span>
     </div>
 
     <div class="menu">
-      <a href="#">Início</a>
-      <a href="#">História</a>
-      <a href="#">Eventos</a>
+      <a href="index.html">Início</a>
+      <a href="historia.html">História</a>
+      <a href="eventos.html">Eventos</a>
     </div>
 
   </div>
@@ -159,36 +182,41 @@ footer {
   <!-- DESTAQUE -->
   <div class="destaque">
     <a href="historia.html">
-    <img src="img/principal.jpg">
-    <h2>História da Escola</h2>
-    <p>Conheça toda a trajetória da instituição</p>
+      <img src="img/principal.jpg">
+      <h2>História da Escola</h2>
+      <p>Conheça toda a trajetória da instituição</p>
+    </a>
   </div>
 
   <!-- CARDS -->
   <div class="grid">
 
     <div class="card">
-       <a href="historia.html">
-      <img src="img/1000187269.jpg">
-      <h3>Fundação</h3>
+      <a href="historia.html">
+        <img src="img/img1.jpg">
+        <h3>Fundação</h3>
+      </a>
     </div>
 
     <div class="card">
-       <a href="alunos.html">
-      <img src="img/img2.jpg">
-      <h3>Primeiros alunos</h3>
+      <a href="alunos.html">
+        <img src="img/img2.jpg">
+        <h3>Primeiros alunos</h3>
+      </a>
     </div>
 
     <div class="card">
-       <a href="crescimento.html">
-      <img src="img/img3.jpg">
-      <h3>Crescimento</h3>
+      <a href="crescimento.html">
+        <img src="img/img3.jpg">
+        <h3>Crescimento</h3>
+      </a>
     </div>
 
     <div class="card">
-       <a href="eventos.html">
-      <img src="img/img4.jpg">
-      <h3>Eventos</h3>
+      <a href="eventos.html">
+        <img src="img/img4.jpg">
+        <h3>Eventos</h3>
+      </a>
     </div>
 
   </div>
@@ -200,9 +228,9 @@ footer {
   <p>Siga a escola:</p>
 
   <div class="redes">
-    <a href="https://www.instagram.com/alonzobarbuda/"target="_blank"><i class="fab fa-instagram"></i></a>
-    <a href="https://www.facebook.com/alonzo.barbuda/"target="_blank"><i class="fab fa-facebook"></i></a>
-    <a href="https://www.youtube.com/@tvalonzobarbuda5052 /"target="_blank"><i class="fab fa-youtube"></i></a>
+    <a href="#" class="instagram"><i class="fab fa-instagram"></i></a>
+    <a href="#" class="facebook"><i class="fab fa-facebook"></i></a>
+    <a href="#" class="youtube"><i class="fab fa-youtube"></i></a>
   </div>
 
   <p>© 2026 Escola Alonzo Barbuda</p>
