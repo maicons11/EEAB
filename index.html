@@ -6,9 +6,12 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>Escola Alonzo Barbuda</title>
+
+<!-- ÍCONES (IMPORTANTE) -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
 <style>
+
 body {
   margin: 0;
   font-family: Arial, sans-serif;
@@ -45,7 +48,7 @@ body {
   font-weight: bold;
 }
 
-/* CONTEÚDO */
+/* CONTAINER */
 .container {
   width: 90%;
   max-width: 1000px;
@@ -68,7 +71,7 @@ body {
   color: #555;
 }
 
-/* GRID DOS CARDS */
+/* GRID */
 .grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -93,7 +96,6 @@ body {
 
 .card h3 {
   font-size: 14px;
-  margin-top: 8px;
 }
 
 /* RODAPÉ */
@@ -102,7 +104,13 @@ footer {
   color: white;
   text-align: center;
   padding: 20px;
-  margin-top: 30px;
+}
+
+/* ÍCONES */
+.redes i {
+  font-size: 25px;
+  margin: 10px;
+  color: white;
 }
 
 /* RESPONSIVO */
@@ -121,6 +129,7 @@ footer {
     grid-template-columns: 1fr;
   }
 }
+
 </style>
 </head>
 
@@ -131,7 +140,7 @@ footer {
   <div class="container">
     
     <div class="logo">
-      <img src="img/imglogo.jpg" alt="Logo">
+      <img src="img/logo.jpg">
       <span>Escola Alonzo Barbuda</span>
     </div>
 
@@ -149,9 +158,9 @@ footer {
 
   <!-- DESTAQUE -->
   <div class="destaque">
-    <img src="img/principal.jpg" alt="">
-    <h2>Escola celebra 60 anos de história</h2>
-    <p>Clique e conheça toda a trajetória da instituição</p>
+    <img src="img/principal.jpg">
+    <h2>História da Escola</h2>
+    <p>Conheça toda a trajetória da instituição</p>
   </div>
 
   <!-- CARDS -->
@@ -159,7 +168,7 @@ footer {
 
     <div class="card">
       <img src="img/img1.jpg">
-      <h3>Como tudo começou</h3>
+      <h3>Fundação</h3>
     </div>
 
     <div class="card">
@@ -168,13 +177,13 @@ footer {
     </div>
 
     <div class="card">
-      <img src="img/1000187269.jpg">
-      <h3>Evolução da escola</h3>
+      <img src="img/img3.jpg">
+      <h3>Crescimento</h3>
     </div>
 
     <div class="card">
       <img src="img/img4.jpg">
-      <h3>Eventos importantes</h3>
+      <h3>Eventos</h3>
     </div>
 
   </div>
@@ -184,7 +193,13 @@ footer {
 <!-- RODAPÉ -->
 <footer>
   <p>Siga a escola:</p>
-  <p>Instagram | Facebook | YouTube</p>
+
+  <div class="redes">
+    <a href="#"><i class="fab fa-instagram"></i></a>
+    <a href="#"><i class="fab fa-facebook"></i></a>
+    <a href="#"><i class="fab fa-youtube"></i></a>
+  </div>
+
   <p>© 2026 Escola Alonzo Barbuda</p>
 </footer>
 
