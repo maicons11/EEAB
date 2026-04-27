@@ -1,257 +1,192 @@
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width,intial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Escola Alonso Barbuda</title>
-
+<title>Escola Alonzo Barbuda</title>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
 <style>
-  @media(max-width: 768px) {
-    .container{
-      width: 95%;
-    }
-    .topo{
-      flex-direction: column;
-      align-items: flex-start;
-    }
-    .menu{
-      margin-top: 10px;
-    }
-    .destaque{
-      height: 200px;
-    }
-    .grid{
-      grid-template-columns: repeat(2,1fr);
-
-    }
-    .card{
-      height: 150px;
-    }
-  }
-@media(max-width: 480px) {
-  .grid{
-  grid-template-columns: 1fr;
-  }
-
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f5f5f5;
 }
-  body {
-    font-family: Arial;
-    margin: 0;
-    background: #f4f4f4;
-  }
 
-  .topo {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background: #0622be;
-    padding: 10px 20px;
-  }
+/* TOPO */
+.topo {
+  background: #1e40af;
+  color: white;
+  padding: 15px;
+}
 
-  .logo {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    color: white;
-    font-weight: bold;
-    position: relative;
-  }
+.topo .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 
-  .logo img {
-    height: 80px;
-    cursor: pointer;
-    transition: 0.3s;
-  }
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
 
-  .logo img.expandido {
-    transform: scale(2);
-    position: absolute;
-    top: 80px;
-    left: 0;
-    z-index: 999;
-  }
+.logo img {
+  width: 40px;
+}
 
-  .menu a {
-    color: white;
-    margin-left: 15px;
-    text-decoration: none;
-    font-weight: bold;
-  }
+.menu a {
+  color: white;
+  text-decoration: none;
+  margin-left: 15px;
+  font-weight: bold;
+}
 
-  .container {
-    width: 90%;
-    margin: auto;
-    margin-top: 20px;
-  }
+/* CONTEÚDO */
+.container {
+  width: 90%;
+  max-width: 1000px;
+  margin: 20px auto;
+}
 
-  .destaque {
-    background: white;
-    padding: 20px;
-    border-radius: 10px;
-    margin-bottom: 20px;
+/* DESTAQUE */
+.destaque img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+.destaque h2 {
+  margin: 10px 0 5px;
+}
+
+.destaque p {
+  color: #555;
+}
+
+/* GRID DOS CARDS */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+  margin-top: 20px;
+}
+
+/* CARD */
+.card {
+  background: white;
+  border-radius: 12px;
+  padding: 10px;
+  text-align: center;
+}
+
+.card img {
+  width: 100%;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.card h3 {
+  font-size: 14px;
+  margin-top: 8px;
+}
+
+/* RODAPÉ */
+footer {
+  background: #222;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin-top: 30px;
+}
+
+/* RESPONSIVO */
+@media (max-width: 768px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
   }
 
   .destaque img {
-    width: 100%;
-    height: 300px;
-    object-fit: cover;
-    border-radius: 10px;
+    height: 200px;
   }
+}
 
-  .destaque h2 {
-    color: #c4170c;
-  }
-
+@media (max-width: 480px) {
   .grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 12px;
+    grid-template-columns: 1fr;
   }
-
-  .card {
-    background: white;
-    padding: 10px;
-    border-radius: 10px;
-    transition: 0.3s;
-  }
-
-  .card:hover {
-    transform: scale(1.05);
-  }
-
-  .card img {
-    width: 100%;
-    height: 120px;
-    object-fit: cover;
-    border-radius: 8px;
-  }
-
-  .card h3 {
-    font-size: 14px;
-  }
-
-  a {
-    text-decoration: none;
-    color: black;
-  }
-
-  a:hover {
-    color: #c4170c;
-  }
-
-  .rodape {
-    background: #222;
-    color: white;
-    text-align: center;
-    padding: 20px;
-    margin-top: 20px;
-  }
-
-  .redes a {
-    color: white;
-    margin: 0 15px;
-    font-size: 24px;
-    transition: 0.3s;
-  }
-
-  .redes a:hover {
-    transform: scale(1.2);
-  }
-
-  .redes a:nth-child(1):hover { color: #E1306C; }
-  .redes a:nth-child(2):hover { color: #1877F2; }
-  .redes a:nth-child(3):hover { color: #FF0000; }
-
+}
 </style>
 </head>
 
 <body>
 
+<!-- TOPO -->
 <div class="topo">
-  <div class="logo">
-    <img src="img/imglogo.jpg" onclick="expandirLogo(this)">
-    <span>Escola Alonzo Barbuda</span>
-  </div>
+  <div class="container">
+    
+    <div class="logo">
+      <img src="img/logo.jpg" alt="Logo">
+      <span>Escola Alonzo Barbuda</span>
+    </div>
 
-  <div class="menu">
-    <a href="#">Início</a>
-    <a href="#">História</a>
-    <a href="#">Eventos</a>
+    <div class="menu">
+      <a href="#">Início</a>
+      <a href="#">História</a>
+      <a href="#">Eventos</a>
+    </div>
+
   </div>
 </div>
 
+<!-- CONTEÚDO -->
 <div class="container">
 
+  <!-- DESTAQUE -->
   <div class="destaque">
-    <a href="historia.html#inicio">
-      <img src="img/destaque.jpg">
-      <h2>Escola celebra 60 anos de história 🎉</h2>
-      <p>Clique e conheça toda a trajetória da instituição.</p>
-    </a>
+    <img src="img/principal.jpg" alt="">
+    <h2>Escola celebra 60 anos de história</h2>
+    <p>Clique e conheça toda a trajetória da instituição</p>
   </div>
 
+  <!-- CARDS -->
   <div class="grid">
 
     <div class="card">
-      <a href="historia.html#inicio">
-        <img src="img/1000187269.jpg">
-        <h3>Como tudo começou</h3>
-      </a>
+      <img src="img/img1.jpg">
+      <h3>Como tudo começou</h3>
     </div>
 
     <div class="card">
-      <a href="historia.html#alunos">
-        <img src="img/img2.jpg">
-        <h3>Primeiros alunos</h3>
-      </a>
+      <img src="img/img2.jpg">
+      <h3>Primeiros alunos</h3>
     </div>
 
     <div class="card">
-      <a href="historia.html#evolucao">
-        <img src="img/img3.jpg">
-        <h3>Evolução da escola</h3>
-      </a>
+      <img src="img/img3.jpg">
+      <h3>Evolução da escola</h3>
     </div>
 
     <div class="card">
-      <a href="historia.html#eventos">
-        <img src="img/img4.jpg">
-        <h3>Eventos importantes</h3>
-      </a>
+      <img src="img/img4.jpg">
+      <h3>Eventos importantes</h3>
     </div>
 
   </div>
 
 </div>
 
-<footer class="rodape">
+<!-- RODAPÉ -->
+<footer>
   <p>Siga a escola:</p>
-
-  <div class="redes">
-    <a href="https://www.instagram.com/alonzobarbuda/" target="_blank">
-      <i class="fab fa-instagram"></i>
-    </a>
-
-    <a href="https://www.facebook.com/alonzo.barbuda/" target="_blank">
-      <i class="fab fa-facebook"></i>
-    </a>
-
-    <a href="https://www.youtube.com/@tvalonzobarbuda5052" target="_blank">
-      <i class="fab fa-youtube"></i>
-    </a>
-  </div>
-
-  <p>© 2026 Escola Alonso Barbuda</p>
+  <p>Instagram | Facebook | YouTube</p>
+  <p>© 2026 Escola Alonzo Barbuda</p>
 </footer>
-
-<script>
-function expandirLogo(img) {
-  img.classList.toggle("expandido");
-}
-</script>
 
 </body>
 </html>
